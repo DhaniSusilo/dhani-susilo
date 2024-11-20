@@ -2,7 +2,7 @@
 import logo from "../assets/logo.svg";
 
 export const B = ({ children }) => {
-  return <span className="font-bold">{children}</span>;
+  return <span className="font-bold opacity-100">{children}</span>;
 };
 
 export const TextShadow = ({ children }) => {

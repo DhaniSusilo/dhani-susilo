@@ -31,8 +31,8 @@ const Header = () => {
         <button onClick={() => goThere("about")} className={navBasic}>
           About
         </button>
-        <button onClick={() => goThere("works")} className={navBasic}>
-          Works
+        <button onClick={() => goThere("project")} className={navBasic}>
+          Project
         </button>
         <button onClick={() => goThere("contact")} className={navBasic}>
           Contact

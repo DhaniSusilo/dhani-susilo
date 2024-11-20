@@ -4,18 +4,21 @@
 import Header from "./header";
 import About from "./page/about/about";
 import Home from "./page/home/home";
-import Works from "./page/work/work";
+import Project from "./page/project/project";
 // /className="w-screen h-screen min-h-fit overflow-x-hidden bg-slate-500 relative"
 const RootLayout = () => {
   // const aboutRef = useRef(null);
   return (
     <div className="w-screen h-screen overflow-x-hidden relative">
       <Header />
-      <main className="min-h-fit min-w-fit " style={{ height: "100%" }}>
+      <main
+        className="min-h-fit min-w-fit bg-[#26aff9]"
+        style={{ height: "100%" }}
+      >
         {/* <Outlet></Outlet> */}
         <Home />
         <About />
-        <Works />
+        <Project />
       </main>
     </div>
   );
