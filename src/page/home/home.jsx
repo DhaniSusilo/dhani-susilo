@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.svg";
+import StandImg from "../../assets/StandImg.svg";
 
 const Home = () => {
   //h-[calc(100%-66.71px)]
@@ -18,11 +19,7 @@ const Home = () => {
         <div className="z-20 absolute bottom-5 left-1/2 -translate-x-1/2  text-white font-bold w-full flex justify-center text-center font-jost text-[10vw] sm:text-[5vw] md:text-[3vw]">
           Dhani Susilo
         </div>
-        <img
-          className="w-full z-10 rounded-s-2xl"
-          src="/src/assets/StandImg.svg"
-          alt=""
-        />
+        <img className="w-full z-10 rounded-s-2xl" src={StandImg} alt="" />
       </div>
       <img
         className="absolute top-0 right-0 translate-x-1/2 opacity-30"
