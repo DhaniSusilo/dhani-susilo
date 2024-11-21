@@ -1,4 +1,4 @@
-import { B, TextShadow } from "../../minicomp/stylecomp";
+import { B, Reveal, TextShadow } from "../../minicomp/stylecomp";
 import hr1 from "../../assets/hr1.png";
 import hr2 from "../../assets/hr2.png";
 import { useState } from "react";
@@ -8,23 +8,38 @@ const Project = () => {
   return (
     <div className="w-full h-full flex justify-center text-white" id="project">
       <div className="text-sm w-full h-full flex flex-col justify-center items-center text-center md:text-lg md:w-3/4 space-y-5">
-        <div className="text-3xl w-full md:text-6xl">
-          <TextShadow>
-            <B>My Project</B>
-          </TextShadow>
+        <div className="text-3xl w-full md:text-6xl flex justify-center">
+          <Reveal>
+            <TextShadow>
+              <B>My Project</B>
+            </TextShadow>
+          </Reveal>
         </div>
-        <div>
-          <div>
-            <B>Employee Management Systems</B>
+        <div className="flex flex-col justify-center items-center">
+          <Reveal>
+            <div>
+              <B>Employee Management Systems</B>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div>
+              PT Hexaon Bussiness Mitrasindo sebagai Full Stack Developer
+            </div>
+          </Reveal>
+        </div>
+        <Reveal>
+          <div className="flex justify-center">
+            <ImageCarousel />
           </div>
-          <div>PT Hexaon Bussiness Mitrasindo sebagai Full Stack Developer</div>
-        </div>
-        <ImageCarousel />
-        <div className="p-2">
-          Sebuah website yang berfungsi untuk membatu pencatatan data, kinerja,
-          serta alat bantu lain dalam kegiatan pekerjaan, sperti data karyawan,
-          data absen, pengajuan izin dan cuti, hingga perhitungan gaji
-        </div>
+        </Reveal>
+        <Reveal>
+          <div className="p-2">
+            Sebuah website yang berfungsi untuk membatu pencatatan data,
+            kinerja, serta alat bantu lain dalam kegiatan pekerjaan, sperti data
+            karyawan, data absen, pengajuan izin dan cuti, hingga perhitungan
+            gaji
+          </div>
+        </Reveal>
       </div>
     </div>
   );
@@ -60,7 +75,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative w-3/4 h-fit md:w-full shadow-md shadow-gray-800 rounded-lg flex items-center overflow-hidden hover:scale-105 transition">
+    <div className="relative w-3/4 h-fit md:w-full shadow-md shadow-gray-800 rounded-lg flex items-center overflow-hidden">
       <div className="absolute z-10 w-full flex justify-between md:px-2 text-[#26aff9]">
         <button
           onClick={handlePrev}
