@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useRef } from "react";
 import { motion, useInView, useAnimation } from "motion/react";
